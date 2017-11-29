@@ -1,0 +1,37 @@
+{
+    "name" : "Wikipedia",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "description": "Wikipedia chrome extension tutorial",
+
+    "icons": {
+        "128": "ico128.png",
+        "48": "ico48.png",
+        "16": "ico16.png"
+    },
+
+    "background": {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+
+    // "page_action": {
+    //     "default_icon": "ico16.png",
+    //     "default_popup": "popup.html",
+    //     "default_title": "PageFontStyle"
+    // },
+
+    // "content_scripts": [
+    //     {
+    //         "matches": ["https://github.com/*"],
+    //         "js": ["jquery-3.2.1.min.js", "content.js"],
+    //         "css": ["content.css"]
+    //     }
+    // ],
+
+    "permissions": [
+        "tabs",
+        "contextMenus"
+    ]
+}
